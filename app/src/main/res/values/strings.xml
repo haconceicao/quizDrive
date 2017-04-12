@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">&#160;&#160; quizDrive - driving test</string>
+    <string name="header_string">Answer this 3 questions\r\nScore your readiness to your driving test\r\nMore than 4 points.</string>
+    <string name="Qst1">This Sign is compliant with one of this meanings:</string>
+    <string name="Qst2">In the roundabout who is passing first:</string>
+    <string name="Qst3">Click one or more answers. Defensive driving is:</string>
+
+</resources>

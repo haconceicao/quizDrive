@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.drivers_club.quizdrive.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D32F2F"
+        android:textAllCaps="true"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:text="@string/header_string"
+         android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Write your Name"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/android_Qst1"
+            android:paddingLeft="4dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/n1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/android_QstTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/android_Qst1"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:background="#FFCDD2"
+            android:textColor="#212121"
+            android:text="@string/Qst1" />
+
+        <ImageView
+            android:id="@+id/android_QstImg1"
+            android:paddingLeft="4dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/android_QstTxt1"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_qst01"
+            android:layout_alignParentLeft="true"
+        />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGQst01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/android_QstImg1">
+            <RadioButton android:id="@+id/qst01_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop the vehicle"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/qst01_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just looking around and then go!"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">>
+        <ImageView
+            android:id="@+id/android_Qst2"
+            android:paddingLeft="4dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/n2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/android_QstTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/android_Qst2"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:background="#FFCDD2"
+            android:textColor="#212121"
+            android:text="@string/Qst2" />
+        <ImageView
+            android:id="@+id/android_QstImg2"
+            android:paddingLeft="4dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/android_QstTxt2"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_qst02"
+            android:layout_alignParentLeft="true"
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGQst02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/android_QstImg2">
+            <RadioButton android:id="@+id/qst02_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is entering in the roundabout"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/qst02_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is inside the roundabout"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">>
+
+        <ImageView
+            android:id="@+id/android_Qst3"
+            android:paddingLeft="4dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/n3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/android_QstTxt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/android_Qst3"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:background="#FFCDD2"
+            android:textColor="#212121"
+            android:text="@string/Qst3" />
+
+        <ImageView
+            android:id="@+id/android_QstImg3"
+            android:paddingLeft="4dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/android_QstTxt3"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_qst03"
+            android:layout_alignParentLeft="true"
+            />
+
+        <CheckBox
+            android:id="@+id/Qst3_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/android_QstImg3"
+            android:paddingLeft="8dp"
+            android:text="Plan yout itinerary and your trip"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/Qst3_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/android_QstImg3"
+            android:layout_below="@id/Qst3_01"
+            android:paddingLeft="8dp"
+            android:text="Prevent the other's behaviour"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/Qst3_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/android_QstImg3"
+            android:layout_below="@id/Qst3_02"
+            android:paddingLeft="8dp"
+            android:text="Texting and speed driving"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submitTest"
+        android:text="End Test and see the score!" />
+
+</LinearLayout>
+
+ </ScrollView>
